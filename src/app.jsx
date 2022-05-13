@@ -31,7 +31,7 @@ function App({youtube}) {
 
   return (
     <div className={styles.app}>
-      <SearchHeader/>
+      <SearchHeader onSearch={search}/>
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>
